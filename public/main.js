@@ -1,12 +1,9 @@
 $(document).ready(function(){
     $('button').on('click', function(){
-
         var mycallback= data => data;
 
         $.ajax(init)
-         .done(function(data){
-            console.log(data);
-         })
+         .done(requestHandler)
          .fail(errorHandler);
     });
 });
@@ -19,5 +16,11 @@ var init = {
             jsonpCallback: 'mycallback',
             cache: false
         }
+
+var requestHandler = function(data){
+    console.log(data);
+    $('#quote').html(data[0].content);
+    $('#author').text(data[0].title);
+}
 
 var errorHandler = err => console.log(`There was a problem while executing your JSONP request...`);
