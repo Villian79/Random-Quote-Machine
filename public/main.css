@@ -1,6 +1,9 @@
 body {
 
-background: url("bg1.jpg");
+background-image: url("./images/bg2.jpg");
+			<!--background-repeat:　no-repeat;-->
+			background-position: cover;
+z-index: -1;
 
 }
 
