@@ -1,33 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
 body {
+	background-image: url("./images/concrete-texture.png");
+	background-position: cover;
+	z-index: -1;
+}
 
-background-image: url("./images/bg2.jpg");
-			<!--background-repeat:　no-repeat;-->
-			background-position: cover;
-z-index: -1;
+h1, h4, h5 {
+	text-align: center;
+}
 
+.buttonarea {
+	text-align: center;
+}
+
+hr {
+	width: 50vw;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 30vh;
+	margin-top: 5vh;
 	border-radius: 5px;
+}
 
+.quoteblock {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	border-radius: 15px;
+	background-image: url("./images/cheap_diagonal_fabric.png");
+	padding: 0 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 #quote {
-	width: 35vw;
-
-	text-align: center;
+	width: 50vw;
+	/*text-align: center;*/
 	border-radius: 5px;
 	min-height: 100px;
-	
+	padding-top: 30px;
+	margin-bottom: 0;
 }
 
 #quoteby {
-
-	margin-top: 5px;
+	text-align: right;
 	margin-bottom: 40px;
 }
-
