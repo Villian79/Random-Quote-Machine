@@ -3,11 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Random Quote Machine</title>
+		<link rel="stylesheet" type="text/css" href="./public/main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div id="quote">Text goes here</div>
-        <div>By: <span id="author">Igor Vilinchuk</span></div>
-        <button>Click to get a quote</button>
+		<div class ="container">
+            <h1>Random Quote Machine</h1>
+            <h4>FCC challenge completed using following tools: <em>HTML, CSS, jQuery, Javascript, Bootstrap</em></h4>
+            <h5>API used is provided by <em><a href='http://quotesondesign.com'>quotesondesign.com</a></em></h5>
+            <hr>
+            <div class="quoteblock">
+			    <div id="quote">Text goes here</div>
+			    <div id="quoteby">-- <span id="author">Igor Vilinchuk</span></div>
+            </div>
+            <p class="buttonarea">
+                <span><a href="#" class="btn btn-outline-dark btn-lg quoterequest"><i class="fa fa-quote-left fa-fw"></i>Click for Quote</a></span>
+                <span>      <span>
+                <span><a href="#" class="btn btn-outline-dark btn-lg"><i class="fa fa-twitter fa-fw"></i>Share Quote</a></span>
+            </p>
+		</div>
 
         <script type="text/javascript" src="./public/jquery.js"></script>
         <script type="text/javascript" src="./public/main.js"></script>

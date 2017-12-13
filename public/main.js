@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('button').on('click', function(){
+    $('.quoterequest').on('click', function(){
         var mycallback= data => data;
 
         $.ajax(init)
@@ -23,4 +23,4 @@ var requestHandler = function(data){
     $('#author').text(data[0].title);
 }
 
-var errorHandler = err => console.log(`There was a problem while executing your JSONP request...`);
+var errorHandler = err => console.log("There was a problem with your request to the server...");
