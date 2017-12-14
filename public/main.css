@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+@import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url('https://fonts.googleapis.com/css?family=Aladin|Niconne');
 
 body {
 	background-image: url("./images/concrete-texture.png");
@@ -37,8 +39,8 @@ a {
 	background-image: url("./images/cheap_diagonal_fabric.png");
 	padding: 0 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	font-family: 'Covered By Your Grace', cursive;
-	font-size: 1.5em;
+	font-family: 'Aladin', cursive;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -54,4 +56,13 @@ a {
 #quoteby {
 	text-align: right;
 	margin-bottom: 40px;
+}
+
+.footer {
+	margin-top: 3vh;
+	text-align: center;
+}
+
+#github {
+	font-size: 24px;
 }
