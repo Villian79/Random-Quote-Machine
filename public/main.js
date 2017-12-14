@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $('.quoterequest').on('click', function(event){
+    //Getting data from the API
+    $('.quoterequest').on('click', function(){
 		getQuote();
     });
-	
+
 	//Sending message via TWITTER
-	$('.share-quote').on('click', function(event){
-		event.preventDefault();
+	$('.share-quote').on('click', function(){
 		window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($('#quote').text() + ' --' + $('#author').text()));
 	});
 });
@@ -14,7 +14,6 @@ var getQuote = function(){
 		var quote;
 		var author;
         var mycallback= data => data;
-		event.preventDefault(); //prevents the screen jumping to the end
         $.ajax(init)
          .done(requestHandler)
          .fail(errorHandler);
